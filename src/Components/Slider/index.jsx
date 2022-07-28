@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Controller from './Controller';
-import styles from './Slider.style/Style.module.scss'
+import Slide from './Slide';
+
 
 
 export default function Slider(props) {
@@ -19,7 +20,7 @@ export default function Slider(props) {
     }
     return(
         <div className={styles.container}>
-            <Slider images={images} currentImgId={currentImgId}/>
+            <Slide images={images} currentImgId={currentImgId}/>
             <Controller setPrevSlide={setPrevSlide} setNextSlide={setNextSlide} />
         </div>
     )

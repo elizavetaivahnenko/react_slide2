@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import PropTypes from 'prop-types';
 import styles from './Controller.module.scss'
+import PropTypes from 'prop-types';
 
 export default function Controller(props) {
   const {setPrevSlide, setNextSlide} = props;
