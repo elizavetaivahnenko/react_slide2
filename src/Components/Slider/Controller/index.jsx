@@ -16,7 +16,8 @@ export default function Controller(props) {
   }
   const stop = () => {
     if(isRunning){
-        clearInterval(slideshowId);
+      clearInterval(slideshowId);
+      setSlideshowId(null);
         setIsRunning(false);
     }
   }
